@@ -11,7 +11,10 @@ class HostProgram:
 def main():
     host_program = HostProgram()
     symbiont = Symbiont(host_program)
+    
+    # Start the console interface after initializing the symbiont
     symbiont.start()
+    symbiont.console_interface()
 
 if __name__ == "__main__":
     main()
